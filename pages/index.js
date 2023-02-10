@@ -1,8 +1,15 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import { useState } from 'react'
+
+import ImageCard from '../components/ImageCard'
+import InfoCard from '../components/InfoCard'
 
 export default function Home() {
+
+  const [info, setInfo]= useState(false)
+
   return (
     <div className={styles.container}>
       <Head>
@@ -12,6 +19,11 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
+        <div onClick={() => setInfo(!info)}>
+        <ImageCard/>
+        </div>
+        {/* <button onClick={() => setInfo(!info)}>Click me</button> */}
+        {info ? <InfoCard/> : null} 
         
       </main>
     </div>
