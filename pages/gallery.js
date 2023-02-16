@@ -21,17 +21,15 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        {/* <div onClick={() => setInfo(!info)}>
-        <ImageCard/>
-        </div>
-        {/* <button onClick={() => setInfo(!info)}>Click me</button> */}
-        {/* {info ? <InfoCard/> : null}   */}
 
         <CircleImage/>
-        <h1> Welcome to Floral Finds</h1>
-        <p>A comprehensive online resource dedicated to providing information on various types of flowers, including their description and maintenance tips. Whether you are a gardening enthusiast or simply want to learn more about the beauty of flowers, Flowerpedia has everything you need to know to care for these plants and make them thrive. Explore our mini-site to discover the many different types of flowers and how to keep them healthy and vibrant. </p>
+        <h1> Flowers </h1>
         <Button/>
-
+        
+        <div onClick={() => setInfo(!info)}>
+        <ImageCard/>
+        </div>
+        {info ? <InfoCard/> : null}  
 
         
       </main>
