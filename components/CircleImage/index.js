@@ -1,9 +1,15 @@
 import styled from 'styled-components';
 
-export default function CircleImage (){
+export const HeroImage = styled.img
+`
+`
+
+export default function CircleImage ({
+    src='/HeroImage.png',
+}){
     return(
         <div>
-            <img/>
+            <HeroImage src={src} width='400'/>
         </div>
     )
 }
