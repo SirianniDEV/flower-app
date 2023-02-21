@@ -64,7 +64,7 @@ export default function Home() {
           </ul>
         </div>
 
-      <div className={styles.Gallery}>
+      <div className={styles.Gallery} id="container">
 
         <div className={styles.Data}>
         <Text position='sticky' align='center' padding='40px' size='40px' weight='700' txt='Backyard Beginner'/>
