@@ -58,7 +58,7 @@ export default function Home() {
           <Text align='center' padding='40px' size='40px' weight='700' txt='Flower Gallery'/>
           <Text txt='The gallery displays flowers in three categories based on their level of maintenance required. These categories are as follows:'/>
           <ul>
-            <li> <strong>Backyard Beginner (Easy):</strong> This category includes flowers that are relatively easy to care for and require minimal maintenance. They are suitable for beginners or those with limited time to devote to gardening</li>
+            <li><strong>Backyard Beginner (Easy):</strong> This category includes flowers that are relatively easy to care for and require minimal maintenance. They are suitable for beginners or those with limited time to devote to gardening</li>
             <li><strong>Green Thumb Grower (Medium):</strong>This category includes flowers that require a bit more attention and care than those in the easy maintenance category. They may require more frequent watering, fertilizing, and pruning to keep them healthy and blooming</li>
             <li><strong>Flourishing Horticulturist (Hard):</strong> This category includes flowers that are more challenging to grow and require a lot of care and attention to thrive. They may have specific soil and light requirements, and may need regular pest and disease control measures</li>
           </ul>
