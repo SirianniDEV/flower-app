@@ -30,10 +30,11 @@ export const Wrapper = styled.div
 export const Needs = styled.div 
 `
     display: flex;
+    gap: 30px;
 
 `
 
-export const Care = styled.p
+export const Care = styled.div
 `
     display: flex;
     justify-content: center;

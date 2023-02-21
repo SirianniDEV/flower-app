@@ -6,6 +6,7 @@ Checkout the mini-site here: [VERCEL LINK]
 ## Programming Language Used:
 - Next.js 13
 - Playwright
+- Lottie Animations
 
 ## Data Used
 Database from Kaggle: https://www.kaggle.com/datasets/kkhandekar/a-to-z-flowers-features-images 

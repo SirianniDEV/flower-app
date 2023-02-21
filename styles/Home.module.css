@@ -1,4 +1,5 @@
 .Wrapper {
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -6,15 +7,28 @@
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 33.51%, rgba(198, 88, 157, 0.2) 100%), #FFFFFF;
 }
 
-.HeroImageWrapper{
+.GalleryWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 33.51%, rgba(198, 88, 157, 0.2) 100%), #FFFFFF;
+}
+
+/* .HeroImageWrapper{
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
   width: 100vw;
-}
+  height: 1563px;
+  top: -295px;
+} */
 
 .Container {
-  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items:center
 }
 
 .AboutWrapper {
@@ -34,23 +48,27 @@
   padding: 10px;
 }
 
-.NavWrapper{
+.Info{
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 50px;
+  width: 50%;
 }
 
-.Nav{
+.GalleryAbout{
   display: flex;
-  gap: 15px;
-  text-align: left;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   padding: 10px;
+  width: 50%;
 }
 
-.Nav:Hover{
-  color:  #C6589D;
+.Gallery{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .Header {
@@ -59,14 +77,38 @@
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
-  width: 100vw;
+  width: 100%;
+  position: sticky;
+  top: 0;
 }
 
 .Data{
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
-  gap: 26px;
+  gap: 25px;
+  padding: 15px;
+}
+
+@media (max-width: 414px) {
+
+  .Gallery {
+    flex-direction: column;
+  }
+  .GalleryAbout {
+    width: 75%;
+  }
+
+  .Info {
+    width: 75%;
+  }
+}
+
+@media (max-width: 820px) {
+
+  .Gallery {
+    flex-direction: column;
+  }
 }
