@@ -64,17 +64,17 @@ export default function Card({
                 </Needs>
                 <Care>
                     <div>
-                    <Icon src={"/sunlight.svg"} width='50' height='50'/>
+                    <Image src={"/Sunlight.svg"} width='50' height='50'/>
                     <p>{sun}</p>
                     </div>
 
                     <div>
-                    <Icon src={"/wet.svg"} width='50' height='50'/>
+                    <Image src={"/Wet.svg"} width='50' height='50'/>
                     <p>{water}</p>
                     </div>
 
                     <div>
-                    <Icon src={"/care.svg"} width='50' height='50'/>
+                    <Image src={"/care.svg"} width='50' height='50'/>
                     <p>{care}</p>
                    </div>
 
