@@ -61,7 +61,7 @@ export default function Home() {
         </motion.div>
 
         <motion.div className={styles.GalleryAbout}
-                    initial={{ opacity: 0, y: -400}}
+                    initial={{ opacity: 0, y: -100}}
                     animate={{ opacity: 100, y:0}}
                     transition={{ duration: 0.8, }}>
           <Text align='center' padding='40px' size='40px' weight='700' txt='Flower Gallery'/>
@@ -121,18 +121,9 @@ export default function Home() {
         {record.map((rec, index, i) => {
               return rec.Maintenance == "medium"  ? (
                 <motion.div onClick={() => handleInfoClick(index)} key={index}
-                initial={{
-                  opacity: 0,
-                  y: 1000
-                }}
-                animate={{
-                  opacity: 1,
-                  y: sel === i ? 300 : 0,
-                }}
-                transition={{
-                  duration: 1,
-                  delay: 0.6
-                }}>
+                  initial={{opacity: 0, y: 1000}}
+                  animate={{opacity: 1,y: sel === i ? 300 : 0,}}
+                  transition={{duration: 1,delay: 0.6}}>
                   <ImageCard Name={rec.Name} Type={rec.PlantType} src={rec.Image} />
                   {expand [index] ? (
                     <InfoCard
@@ -157,18 +148,9 @@ export default function Home() {
         {record.map((rec, index, i) => {
               return rec.Maintenance == "hard" ? (
                 <motion.div onClick={() => handleInfoClick(index)} key={index}
-                initial={{
-                  opacity: 0,
-                  y: 1000
-                }}
-                animate={{
-                  opacity: 1,
-                  y: sel === i ? 300 : 0,
-                }}
-                transition={{
-                  duration: 1,
-                  delay: 0.9
-                }}>
+                initial={{opacity: 0, y: 1000}}
+                animate={{opacity: 1,y: sel === i ? 300 : 0,}}
+                transition={{duration: 1,delay: 0.6}}>
                   <ImageCard Name={rec.Name} Type={rec.PlantType} src={rec.Image} />
                   {expand [index] ? (
                     <InfoCard
