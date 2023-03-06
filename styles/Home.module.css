@@ -62,7 +62,14 @@
   align-items: center;
   flex-direction: column;
   padding: 10px;
-  width: 75%;
+  width: 50%;
+}
+
+.Gallery{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
 }
 
 .Header {
@@ -88,6 +95,9 @@
 
 @media (max-width: 414px) {
 
+  .Gallery {
+    flex-direction: column;
+  }
   .GalleryAbout {
     width: 75%;
   }
